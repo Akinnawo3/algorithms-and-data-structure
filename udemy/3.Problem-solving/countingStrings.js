@@ -13,4 +13,7 @@ function count(str) {
       res[currentItem] = 1;
     }
   }
+  return res;
 }
+
+console.log(count("halleluya ~!!"));
