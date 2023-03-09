@@ -7,7 +7,7 @@ function count(str) {
   for (let i = 0; i < str.length; i++) {
     let currentItem = str[i].toLowerCase();
 
-    if (/a-z0-9/.test(currentItem)) {
+    if (/[a-z0-9]/.test(currentItem)) {
       if (res[currentItem] > 0) {
         currentItem++;
       } else {
