@@ -3,6 +3,8 @@
 // it returns the result in an object form.
 
 function count(str) {
+
+    
     let res ={}
     
 }
