@@ -3,10 +3,9 @@
 // it returns the result in an object form.
 
 function count(str) {
+  let res = {};
 
+  for (let i = 0; i <= str.length; i++) {
     
-
-
-    let res ={}
-    
+  }
 }
