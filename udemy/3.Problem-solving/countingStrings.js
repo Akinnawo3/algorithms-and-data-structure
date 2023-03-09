@@ -6,10 +6,13 @@ function count(str) {
   let res = {};
   for (let i = 0; i < str.length; i++) {
     let currentItem = str[i].toLowerCase();
-    if (res[currentItem] > 0) {
-      currentItem++;
-    } else {
-      res[currentItem] = 1;
+
+    if (/a-z0-9/.test(currentItem)) {
+      if (res[currentItem] > 0) {
+        currentItem++;
+      } else {
+        res[currentItem] = 1;
+      }
     }
   }
   return res;
