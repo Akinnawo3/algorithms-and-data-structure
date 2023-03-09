@@ -4,8 +4,8 @@
 
 function count(str) {
   let res = {};
-  for (let i = 0; i < str.length; i++) {
-    let currentItem = str[i].toLowerCase();
+  for (var char of str) {
+    let currentItem = char.toLowerCase();
 
     if (/[a-z0-9]/.test(currentItem)) {
       if (res[currentItem] > 0) {
