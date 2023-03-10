@@ -41,11 +41,12 @@ const isAlphaNumericChar = (char) => {
   const code = char.charCodeAt(0);
 
   return (
-    (code > 47 && code < 58) ||
-    (code > 64 && code < 91) ||
-    (code > 96 && code < 123)
+    (code > 47 && code < 58) || //numeric (0-9)
+    (code > 64 && code < 91) || // uppercase Alpha (A-Z)
+    (code > 96 && code < 123) //lowecase Alpha (a-z)
   );
 };
+
 
 function count(str) {
   let res = {};
