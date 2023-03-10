@@ -8,7 +8,19 @@ function isAnagram(str1, str2) {
     return false;
   }
 
+  for (let char of str1) {
+    counter1[char] = ++counter1[char] || 1;
+  }
+  for (char of str2) {
+    counter2[char] = ++counter2[char] || 1;
+  }
 
-
-  
+  for (key in counter1) {
+    if (!(key in counter2) || counter1[key] !== counter2[key]) {
+      return false;
+    }
+  }
+  return true;
 }
+
+console.log(isAnagram("cinema", "iceman"));
