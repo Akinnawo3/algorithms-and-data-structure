@@ -4,4 +4,11 @@
 function isAnagram(str1, str2) {
   let counter1 = {};
   let counter2 = {};
+  if (str1.length !== str2.length) {
+    return false;
+  }
+
+
+
+  
 }
