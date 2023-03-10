@@ -4,7 +4,7 @@
 // if every value in the array has its corresponding value squared in the second array .
 // the frequency must be the same
 
-e.g;
+// e.g;
 
 // same([1,2,3], [4,1,9]) returns true
 // same([1,2,3], [1,9]) returns false
@@ -26,4 +26,4 @@ function same(arr1, arr2) {
   return true;
 }
 
-same([1, 2, 3, 2], [9, 1, 4, 4]);
+console.log(same([1, 2, 3, 2], [9, 1, 4, 4]));
