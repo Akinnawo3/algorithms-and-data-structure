@@ -35,7 +35,18 @@
 
 // console.log(count("halleluya ~!!"));
 
-//avoiding regular expression as it mught reduce performance
+
+
+
+
+
+
+//avoiding regular expression as it might reduce performance
+//we will use charCode instead
+const isAlphaNumericChar=()=>{
+
+}
+
 function count(str) {
   let res = {};
   for (var char of str) {
