@@ -27,7 +27,7 @@
 //     let currentItem = char.toLowerCase();
 
 //     if (/[a-z0-9]/.test(currentItem)) {
-//       res[currentItem] = res[currentItem]++ || 1;
+//       res[currentItem] = ++res[currentItem] || 1;
 //     }
 //   }
 //   return res;
@@ -47,17 +47,20 @@ const isAlphaNumericChar = (char) => {
   );
 };
 
-
 function count(str) {
   let res = {};
   for (var char of str) {
     let currentItem = char.toLowerCase();
 
-    if (/[a-z0-9]/.test(currentItem)) {
-      res[currentItem] = res[currentItem]++ || 1;
+    if (isAlphaNumericChar(currentItem)) {
+      res[currentItem] = ++res[currentItem] || 1;
     }
   }
   return res;
 }
 
 console.log(count("halleluya ~!!"));
+
+
+
+
