@@ -35,17 +35,17 @@
 
 // console.log(count("halleluya ~!!"));
 
-
-
-
-
-
-
 //avoiding regular expression as it might reduce performance
 //we will use charCode instead
-const isAlphaNumericChar=()=>{
+const isAlphaNumericChar = (char) => {
+  const code = char.charCodeAt(0);
 
-}
+  return (
+    (code > 47 && code < 58) ||
+    (code > 64 && code < 91) ||
+    (code > 96 && code < 123)
+  );
+};
 
 function count(str) {
   let res = {};
