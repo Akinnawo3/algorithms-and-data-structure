@@ -20,7 +20,22 @@
 
 // console.log(count("halleluya ~!!"));
 
-//refactored and liner code
+//refactored and leaner code
+// function count(str) {
+//   let res = {};
+//   for (var char of str) {
+//     let currentItem = char.toLowerCase();
+
+//     if (/[a-z0-9]/.test(currentItem)) {
+//       res[currentItem] = res[currentItem]++ || 1;
+//     }
+//   }
+//   return res;
+// }
+
+// console.log(count("halleluya ~!!"));
+
+//avoiding regular expression as it mught reduce performance
 function count(str) {
   let res = {};
   for (var char of str) {
@@ -34,5 +49,3 @@ function count(str) {
 }
 
 console.log(count("halleluya ~!!"));
-
-
