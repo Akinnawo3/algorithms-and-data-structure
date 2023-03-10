@@ -34,3 +34,5 @@ function count(str) {
 }
 
 console.log(count("halleluya ~!!"));
+
+
