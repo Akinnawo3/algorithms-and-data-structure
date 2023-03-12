@@ -8,11 +8,13 @@ function countUniqueValues(arr) {
   for (let i in arr) {
     if (arr[i] > arr[j]) {
       arr.splice(j + 1, 0, arr[i]);
-      j += 1;
+      j += 2;
+      //   console.log(arr[i])
+      //   console.log(arr)
+      //   console.log(j)
     }
   }
-  console.log(j + 1);
-  return j + 1;
+  return j;
 
   //   const res = [];
 
