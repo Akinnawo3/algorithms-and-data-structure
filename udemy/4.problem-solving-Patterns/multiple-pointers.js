@@ -31,4 +31,4 @@ function sumZero(arr) {
   }
 }
 
-console.log(sumZero([-4, -3, -2, -1, 0, 1, 2, 5]));
+console.log(sumZero([-4, -3, -2, -1, 0, 1, 2, ,8,0,4]));
