@@ -4,7 +4,6 @@
 
 function countUniqueValues(arr) {
   let j = 0;
-
   for (let i in arr) {
     if (arr[i] > arr[j]) {
       arr.splice(j + 1, 0, arr[i]);
