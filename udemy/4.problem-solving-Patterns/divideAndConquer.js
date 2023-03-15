@@ -7,7 +7,7 @@ function determineTheIndex(arr, num) {
   let min = 0;
   let max = arr.length - 1;
   while (min <= max) {
-    let middle = Math.floor((max - min) / 2);
+    let middle = Math.floor((max + min) / 2);
     let middleElement = arr[middle];
 
     if (num > middleElement) {
@@ -19,4 +19,12 @@ function determineTheIndex(arr, num) {
     }
   }
   return -1;
+
 }
+
+
+
+
+
+
+console.log(determineTheIndex([-2, 3, 5, 7, 8, 9, 15, 16, 17, 35, 46, 78], 35));
