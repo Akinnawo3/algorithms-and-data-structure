@@ -3,7 +3,13 @@
 
 //using divide and conquer approach
 
+function determineTheIndex(arr, num) {
+  let min = 0;
+  let max = arr.length - 1;
 
-function determineTheIndex(arr, num){
+  while (min<=max){
     
+  }
+
+
 }
