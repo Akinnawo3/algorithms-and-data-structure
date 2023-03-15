@@ -5,15 +5,19 @@
 function maxSubarraySum(arr, num) {
   if (arr.length < num) return null;
 
-  let maxsum = -Infinity;
-  let tempsum = -Infinity;
+  let maxsum = 0;
+  let tempsum = 0;
 
   for (let i = 0; i < num; i++) {
     maxsum += arr[i];
-    tempsum = maxsum;
   }
+  tempsum = maxsum;
 
-  return [maxsum, tempsum];
+  for (let i = num; i < arr.length; i++) {
+    tempsum = tempsum - arr[i - num] + arr[i];
+    maxsum = Math.max(tempsum, maxsum);
+  }
+  return maxsum;
 }
 
 console.log(maxSubarraySum([2, 4, 6, 1, 9, 6, 4, 7, 8, 3, 2], 3));
