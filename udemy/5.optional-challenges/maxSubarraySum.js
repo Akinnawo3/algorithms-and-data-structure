@@ -12,6 +12,7 @@
 
 // Time Complexity - O(N)
 
+
 // Space Complexity - O(1)
 
 function maxSubarraySum(arr, num) {
@@ -28,7 +29,7 @@ function maxSubarraySum(arr, num) {
   }
   return maxSum;
 
-  
+
 }
 
 console.log(maxSubarraySum([3, -2, 7, -4, 1, -1, 4, -2, 1], 2));
