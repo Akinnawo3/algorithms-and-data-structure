@@ -27,6 +27,8 @@ function maxSubarraySum(arr, num) {
     maxSum = Math.max(currentSum, maxSum);
   }
   return maxSum;
+
+  
 }
 
 console.log(maxSubarraySum([3, -2, 7, -4, 1, -1, 4, -2, 1], 2));
