@@ -21,4 +21,3 @@ function findLongestSubstring(str) {
 
   return Math.max(currentLongest, accumulator.length);
 }
-
