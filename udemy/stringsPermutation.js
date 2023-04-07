@@ -15,7 +15,3 @@ const stringPermutations = (str) => {
 
 console.log(stringPermutations("abc"));
 console.log(stringPermutations("*$*"));
-
-
-
-
