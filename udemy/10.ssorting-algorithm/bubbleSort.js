@@ -6,8 +6,8 @@ function swap(arr, smaller, larger) {
 
 function bubbleSort(arr) {
   for (let i = 0; i < arr.length; i++) {
-    for (j = 0; j < arr.length; j++) {
-      if (arr[j] < arr[j + 1]) {
+    for (j = 0; j < arr.length-i; j++) {
+      if (arr[j] > arr[j + 1]) {
         swap(arr, j, j + 1);
       }
       console.log(arr);
@@ -18,4 +18,5 @@ function bubbleSort(arr) {
 
 // console.log(bubbleSort([4, 5, 2, 7, 2, 63, 8, 2, 0, 1, 9]));
 
-bubbleSort([4, 5, 2, 7, 2, 63, 8, 2, 0, 1, 9]);
+// bubbleSort([4, 5, 2, 7,1]);
+bubbleSort([8, 1, 2, 3,4,5,6]);
