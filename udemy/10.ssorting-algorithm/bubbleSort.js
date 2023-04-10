@@ -4,8 +4,6 @@ function swap(arr, smaller, larger) {
   arr[larger] = temp;
 }
 
-
-
 function bubbleSort(arr) {
   for (let i = 0; i < arr.length; i++) {
     let swapped = false;
