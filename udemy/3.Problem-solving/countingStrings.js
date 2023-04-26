@@ -39,7 +39,6 @@
 //we will use charCode instead
 const isAlphaNumericChar = (char) => {
   const code = char.charCodeAt(0);
-
   return (
     (code > 47 && code < 58) || //numeric (0-9)
     (code > 64 && code < 91) || // uppercase Alpha (A-Z)
