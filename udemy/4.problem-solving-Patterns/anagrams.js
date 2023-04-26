@@ -25,4 +25,3 @@ function isAnagram(str1, str2) {
 console.log(isAnagram("cinema", "iceman")) ;
 console.log(isAnagram("awesome", "aweson")) ;
 
-
