@@ -27,4 +27,3 @@ console.log(isAnagram("cinema", "iceman")) ;
 console.log(isAnagram("awesome", "aweson")) ;
 
 
-
