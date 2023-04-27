@@ -1,4 +1,4 @@
-//write a function called sunZero which accepts a sorted array of integers.
+//write a function called sumZero which accepts a sorted array of integers.
 //  the finction shpuld find the first pair where sum is zero
 // return an array that includes those values that sum toi zero
 // or undefined if the pair does not exist.
