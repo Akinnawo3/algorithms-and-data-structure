@@ -1,3 +1,9 @@
+// stringifyNumbers
+// Write a function called stringifyNumbers which takes 
+// in an object and finds all of the values which are numbers and 
+// converts them to strings. Recursion would be a great way to solve this!
+
+
 function stringifyNumbers(obj) {
   let allKeys = Object.keys(obj);
   let allValues = Object.values(obj);
@@ -11,7 +17,7 @@ function stringifyNumbers(obj) {
       !Array.isArray(obj[arr[0]]) &&
       obj[arr[0]] !== null
     ) {
-      console.log(obj[arr[0]]);
+      // console.log(obj[arr[0]]);
       //   console.log(arr[0]);
       let tempKey = Object.keys(obj[arr[0]]); // ["val", "info"]
       obj[arr[0]] = recursive(tempKey, obj[arr[0]]);
