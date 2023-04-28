@@ -20,3 +20,4 @@ function someRecursive(arr, callBack){
     if (callBack(arr[0])) return true;
     return someRecursive (arr.slice(1), callBack)
   }
+  
