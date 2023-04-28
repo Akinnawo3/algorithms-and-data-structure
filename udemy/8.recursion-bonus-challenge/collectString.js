@@ -20,8 +20,7 @@ function collectStrings(obj){
         }
         
         return recursive(arr.slice(1))
-    }
-    
+    } 
     return recursive(keys);
 }
 
