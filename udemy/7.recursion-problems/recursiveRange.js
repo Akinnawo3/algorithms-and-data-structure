@@ -7,3 +7,6 @@ function recursiveRange(num){
     
     return num === 0 ? 0 : num+ recursiveRange(num-1)
 }
+    
+
+

@@ -9,6 +9,4 @@ function firstRecursiveFunction(num) {
 
   firstRecursiveFunction(num);
 }
-
-
 firstRecursiveFunction(5)

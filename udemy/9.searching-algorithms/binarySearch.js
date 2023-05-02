@@ -16,15 +16,6 @@ function binarySearch(arr, num) {
 
   // add whatever parameters you deem necessary - good luck!
 }
-
-
-
-
-
-
-
-
-
 console.log(
   binarySearch([1, 2, 3, 4, 5], 2) // 1
 );
