@@ -36,4 +36,6 @@ function bubbleSort(arr) {
 // console.log(bubbleSort([4, 5, 2, 7, 2, 63, 8, 2, 0, 1, 9]));
 
 // bubbleSort([4, 5, 2, 7,1]);
-bubbleSort([8, 1, 2, 3, 4, 5, 6]);
+bubbleSort([8, 4, 2, 3, 1, 5, 6]);
+
+
