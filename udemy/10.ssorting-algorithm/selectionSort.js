@@ -14,6 +14,21 @@
 // the array one element at a time. While it may not be the most efficient sorting
 //  algorithm for large arrays, it is easy to understand and implement.
 
-function selectionSort(array) {}
+function selectionSort(array) {
+  for (let i = 0; i < array.length; i++) {
+    let min = i;
+    for (j = i + 1; j < array.length; j++) {
+      if (array[j] < array[min]) min = j;
+    }
+    if (i !== min) {
+        // console.log(array[i], array[min], array[j])
+      let temp = array[min];
+      array[min] = array[i];
+      array[i] = temp;
+    }
+  }
+  return array
+}
 
+// selectionSort([8, 4, 2, 3, 1, 5, 6]);
 console.log(selectionSort([8, 4, 2, 3, 1, 5, 6]));
