@@ -28,8 +28,7 @@ function bubbleSort(arr) {
       }
     }
     if (!swapped) break;
-    console.log(arr)
-    console.log ("ONE ROUND FINISHED !!!!");
+
   }
 }
 
