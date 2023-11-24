@@ -9,3 +9,4 @@ function logAtMost10(n) {
 
 
 // In other words, the function logs a maximum of 10 always so theres no growth in the complexity relative to the value of n....... (it cant go past 10) . so the big(0) becomes contant at some point constant as 
+ 
