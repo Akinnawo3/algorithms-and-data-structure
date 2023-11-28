@@ -1,6 +1,6 @@
 //write a function called sumZero which accepts a sorted array of integers.
-//  the finction shpuld find the first pair where sum is zero
-// return an array that includes those values that sum toi zero
+//  the finction should find the first pair where sum is zero
+// return an array that includes those values that sum to zero
 // or undefined if the pair does not exist.
 
 function sumZero(arr) {
