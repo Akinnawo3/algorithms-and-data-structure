@@ -44,6 +44,8 @@ function areThereDuplicates(...args) {
 //   }
 //   return false;
 // }
+
+
 // areThereDuplicates Solution (Multiple Pointers)
 // function areThereDuplicates(...args) {
 //   // Two pointers
