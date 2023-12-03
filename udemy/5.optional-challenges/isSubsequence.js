@@ -26,6 +26,8 @@ function isSubsequence(str1, str2) {
 
   for (let char of str2) {
     if (char === str1[counter]) counter++;
+
+    
   }
 
   return counter === str1.length;
