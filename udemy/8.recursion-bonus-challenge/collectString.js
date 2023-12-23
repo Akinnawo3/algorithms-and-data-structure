@@ -43,4 +43,5 @@ const obj = {
     }
 }
 
+
 collectStrings(obj) // ["foo", "bar", "baz"])
