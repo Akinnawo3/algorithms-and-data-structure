@@ -18,4 +18,5 @@ function binarySearch(arr, num) {
 }
 console.log(
   binarySearch([1, 2, 3, 4, 5], 2) // 1
+  
 );
