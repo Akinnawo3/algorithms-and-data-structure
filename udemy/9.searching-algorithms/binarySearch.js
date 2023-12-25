@@ -7,6 +7,7 @@ function binarySearch(arr, num) {
     if (num === arr[middle]) return middle;
     else if (num > arr[middle]) {
       left = middle-1;
+      
     } else if (arr[middle] > num) {
       right = middle;
     }
@@ -18,5 +19,5 @@ function binarySearch(arr, num) {
 }
 console.log(
   binarySearch([1, 2, 3, 4, 5], 2) // 1
-  
+
 );
