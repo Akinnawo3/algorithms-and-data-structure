@@ -2,19 +2,34 @@
 // Write a recursive function called reverse which accepts
 // a string and returns a new string in reverse.
 
-function reverse(str) {
-  // add whatever parameters you deem necessary - good luck!'
+// function reverse(str) {
+//   // add whatever parameters you deem necessary - good luck!'
 
+//   let res = "";
+
+//   function doIt(item) {
+//     if (item === "") return res;
+//     res = item[0] + res;
+//     return doIt(item.slice(1));
+//   }
+
+//   return doIt(str);
+// }
+
+function reverse(string) {
   let res = "";
 
-  function doIt(item) {
-    if (item === "") return res;
-    res = item[0] + res;
-    return doIt(item.slice(1));
-  }
+  const recursive = (str) => {
+    if (str.length === 0) return res;
 
-  return doIt(str);
+    res += str[str.length - 1];
+
+    return recursive(str.slice(0, str.length - 1));
+  };
+
+  return recursive(string);
 }
 
-// reverse('awesome') // 'emosewa'
+console.log(reverse("awesome")); // 'emosewa'
 // reverse('rithmschool') // 'loohcsmhtir'
+

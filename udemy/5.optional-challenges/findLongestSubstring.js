@@ -14,10 +14,12 @@ function findLongestSubstring(str) {
     } else {
       currentLongest = Math.max(currentLongest, accumulator.length);
       accumulator = "";
-      j++;
-      i = j;
+      i++;
+      // i = j;
     }
   }
 
   return Math.max(currentLongest, accumulator.length);
 }
+
+console.log(findLongestSubstring("pwwkew"));

@@ -9,9 +9,6 @@
 
 // Repeat steps 1 and 2 for the entire list until no more swaps are needed.
 
-
-
-
 function swap(arr, smaller, larger) {
   let temp = arr[smaller];
   arr[smaller] = arr[larger];
@@ -25,10 +22,9 @@ function bubbleSort(arr) {
       if (arr[j] > arr[j + 1]) {
         swap(arr, j, j + 1);
         swapped = true;
-      }
+      } 
     }
     if (!swapped) break;
-
   }
 }
 
@@ -36,5 +32,3 @@ function bubbleSort(arr) {
 
 // bubbleSort([4, 5, 2, 7,1]);
 bubbleSort([8, 4, 2, 3, 1, 5, 6]);
-
-

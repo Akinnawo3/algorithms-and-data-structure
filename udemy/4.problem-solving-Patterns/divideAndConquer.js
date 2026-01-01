@@ -3,22 +3,40 @@
 
 //using divide and conquer approach
 
-function determineTheIndex(arr, num) {
+// function determineTheIndex(arr, num) {
+//   let min = 0;
+//   let max = arr.length - 1;
+//   while (min <= max) {
+//     let middle = Math.floor((max + min) / 2);
+//     let middleElement = arr[middle];
+
+//     if (num > middleElement) {
+//       min = middle + 1;
+//     } else if (num < middleElement) {
+//       max = middle - 1;
+//     } else {
+//       return middle;
+//     }
+//   }
+//   return -1;
+
+// }
+
+function determineTheIndex(arr, item) {
   let min = 0;
   let max = arr.length - 1;
-  while (min <= max) {
-    let middle = Math.floor((max + min) / 2);
-    let middleElement = arr[middle];
 
-    if (num > middleElement) {
+  while (min < max) {
+    let middle = Math.ceil((min + max) / 2);
+    if (item < arr[middle]) {
+      max = middle + 1;
+    } else if (item > arr[middle]) {
       min = middle + 1;
-    } else if (num < middleElement) {
-      max = middle - 1;
     } else {
       return middle;
     }
   }
   return -1;
-
 }
-console.log(determineTheIndex([-2, 3, 5, 7, 8, 9, 15, 16, 17, 35, 46, 78], 35));
+
+console.log(determineTheIndex([-2, 3, 5, 7, 8, 9, 15, 16, 17, 35, 46, 78], 17));

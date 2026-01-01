@@ -22,26 +22,26 @@
 //   return recursive(allKeys, obj);
 // }
 
-let stringifyNumbers = (obj) => {
-  Object.keys(obj).forEach((key) => {
-    const value = obj[key];
+// let stringifyNumbers = (obj) => {
+//   Object.keys(obj).forEach((key) => {
+//     const value = obj[key];
 
-    if (!Array.isArray(value) && typeof value == "number") {
-      obj[key] = value.toString();
-    } else if (Array.isArray(value)) {
-      const strArrayVal = value.map((val) => {
-        if (typeof val != "number") {
-          return val;
-        }
-        return val.toString();
-      });
-      obj[key] = strArrayVal;
-    } else if (typeof value === "object") {
-      stringifyNumbers(value);
-    }
-  });
-  return obj
-};
+//     if (!Array.isArray(value) && typeof value == "number") {
+//       obj[key] = value.toString();
+//     } else if (Array.isArray(value)) {
+//       const strArrayVal = value.map((val) => {
+//         if (typeof val != "number") {
+//           return val;
+//         }
+//         return val.toString();
+//       });
+//       obj[key] = strArrayVal;
+//     } else if (typeof value === "object") {
+//       stringifyNumbers(value);
+//     }
+//   });
+//   return obj
+// };
 
 // function numberToString2(obj) {
 //   for (const key in obj) {
@@ -60,6 +60,23 @@ let stringifyNumbers = (obj) => {
 //     }
 //   }
 // }
+
+function stringifyNumbers(obj) {
+  const allKeys = Object.keys(obj);
+
+  const recursive = (arr) => {
+    if (arr.length === 0) return obj;
+    const currValue = obj[arr[0]];
+    if (typeof currValue === "number") currValue === currValue.toString();
+    if (typeof currValue === "object" && !Array.isArray(currValue)) {
+      const newKeys = Object.keys(currValue);
+      return recursive(newKeys);
+    }
+    return recursive(arr.slice(1));
+  };
+
+  return recursive(obj);
+}
 
 let obj = {
   num: "1",
